@@ -2,7 +2,7 @@ import streamlit as st
 
 
 def hypothesis_body():
-    st.write('### This is the project hypothesis page')
+    st.write('### Project hypothesis')
 
     st.success(
         f"* We have reason to believe that leaves affected by powdery mildew exhibit distinct, visible markings, "
