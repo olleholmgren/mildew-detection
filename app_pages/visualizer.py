@@ -13,8 +13,8 @@ import random
 def visualizer_body():
     st.write('## Leaf visualizer')
     st.info(
-        f'* The client is interested in being able to visually differentiate
-        a leaf with powdery mildew from a healthy leaf'
+        f'* The client is interested in being able to visually differentiate'
+        f'a leaf with powdery mildew from a healthy leaf'
     )
 
     version = 'v2'
