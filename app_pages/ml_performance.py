@@ -5,7 +5,7 @@ from matplotlib.image import imread
 from src.machine_learning.evaluate_clf import load_test_evaluation
 
 
-def ml_performance metrics():
+def ml_performance_metrics_body():
 
     version = 'v2'
 
