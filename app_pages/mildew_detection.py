@@ -8,7 +8,7 @@ import pandas as pd
 #    load_model_and_predict,
 #    resize_input_image,
 #    plot_predictions_probabilities
-#)
+# )
 
 
 def mildew_detection_body():
