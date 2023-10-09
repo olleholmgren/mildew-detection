@@ -28,4 +28,5 @@ def ml_performance_metrics_body():
     st.write('---')
 
     st.write('### Generalised performance on test set')
-    # st.dataframe(pd.DataFrame(load_test_evaluation(version), index=['Loss', 'Accuracy'])
+    # st.dataframe(pd.DataFrame(load_test_evaluation(version),
+    # index=['Loss', 'Accuracy'])
