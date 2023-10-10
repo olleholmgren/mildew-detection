@@ -7,7 +7,7 @@ from src.machine_learning.evaluate_clf import load_test_evaluation
 
 def ml_performance_metrics_body():
 
-    version = 'v2'
+    version = 'v3'
 
     st.write('### Train, validation and test set: Labels frequencies')
 

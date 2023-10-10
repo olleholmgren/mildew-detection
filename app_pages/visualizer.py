@@ -17,7 +17,7 @@ def visualizer_body():
         f'a leaf with powdery mildew from a healthy leaf'
     )
 
-    version = 'v2'
+    version = 'v3'
     if st.checkbox("Difference between average and variability image"):
 
         avg_powdery_mildew = plt.imread(
@@ -26,25 +26,32 @@ def visualizer_body():
 
         st.warning(
             f"* We notice the average and variability images did not show "
-            f"patterns where we could intuitively differentiate one from another. "
-            f"However, a small difference in the colour pigment of the average images is seen for both labels.")
+            f"patterns where we could intuitively differentiate one from"
+            f" another. "
+            f"However, a small difference in the colour pigment of the average"
+            f" images is seen for both labels.")
 
         st.image(avg_powdery_mildew,
                  caption='Powdery mildew leaf - Average and Variability')
         st.image(avg_healthy, caption='Healthy leaf - Average and Variability')
         st.write("---")
 
-    if st.checkbox("Differences between average powdery mildew and average healthy leaves"):
+    if st.checkbox(
+            f"Differences between average powdery mildew and average"
+            f" healthy leaves"):
         diff_between_avgs = plt.imread(f"outputs/{version}/avg_diff.png")
 
         st.warning(
             f"* We notice this study didn't show "
-            f"patterns where we could intuitively differentiate one from another.")
+            f"patterns where we could intuitively differentiate one from"
+            f" another.")
         st.image(diff_between_avgs,
                  caption='Difference between average images')
 
     if st.checkbox("Image Montage"):
-        st.write("* To refresh the montage, click on the 'Create Montage' button")
+        st.write(
+            f"* To refresh the montage, click on the 'Create Montage'"
+            f" button")
         my_data_dir = 'inputs/mildew_dataset/cherry-leaves'
         labels = os.listdir(my_data_dir + '/validation')
         label_to_display = st.selectbox(
