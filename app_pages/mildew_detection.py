@@ -2,7 +2,6 @@ import streamlit as st
 from PIL import Image
 import numpy as np
 import pandas as pd
-
 from src.data_management import download_dataframe_as_csv
 from src.machine_learning.predictive_analysis import (
     load_model_and_predict,
@@ -42,9 +41,9 @@ def mildew_detection_body():
                 f'px width x {img_array.shape[0]}px height')
 
             version = 'v3'
-            img_resized = resize_input_image(img=img_pil, version=version)
+            resized_img = resize_input_image(img=img_pil, version=version)
             pred_proba, pred_class = load_model_and_predict(
-                img_resized, version=version)
+                resized_img, version=version)
             plot_predictions_probabilities(pred_proba, pred_class)
 
             df_report = df_report.append(

@@ -7,6 +7,7 @@ from app_pages.visualizer import visualizer_body
 from app_pages.mildew_detection import mildew_detection_body
 from app_pages.ml_performance import ml_performance_metrics_body
 
+
 app = MultiPage(app_name='Cherry leaf mildew detection')
 
 app.app_page('Hypothesis', hypothesis_body)
