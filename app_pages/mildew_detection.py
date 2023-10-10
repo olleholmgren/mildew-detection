@@ -13,15 +13,15 @@ import pandas as pd
 
 def mildew_detection_body():
     st.info(
-        f'* The client is interested in conducting a study to visually'
-        f'differentiate if a given leaf is containing mildew or not'
+        f'* The client is interested in conducting a study to visually '
+        f'differentiate if a given leaf is containing mildew or not.'
     )
 
     st.write(
-        f'* You can download a set of mildew containing leaves and healthy'
-        f' leaves for live prediction.'
-        f'You can download the images from'
-        f' [here](kaggle.com/datasets/codeinstitute/cherry-leaves/code).'
+        f'* You can download a set of mildew containing leaves and healthy '
+        f'leaves for live prediction. '
+        f'You can download the images '
+        f'[here](kaggle.com/datasets/codeinstitute/cherry-leaves/code).'
     )
 
     st.write('---')

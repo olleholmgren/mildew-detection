@@ -13,58 +13,58 @@ import random
 def visualizer_body():
     st.write('## Leaf visualizer')
     st.info(
-        f'* The client is interested in being able to visually differentiate'
-        f'a leaf with powdery mildew from a healthy leaf'
+        f'* The client is interested in being able to visually differentiate '
+        f'a leaf with powdery mildew from a healthy leaf.'
     )
 
     version = 'v3'
-    if st.checkbox("Difference between average and variability image"):
+    if st.checkbox('Difference between average and variability image'):
 
         avg_powdery_mildew = plt.imread(
-            f"outputs/{version}/avg_var_powdery_mildew.png")
-        avg_healthy = plt.imread(f"outputs/{version}/avg_var_healthy.png")
+            f'outputs/{version}/avg_var_powdery_mildew.png')
+        avg_healthy = plt.imread(f'outputs/{version}/avg_var_healthy.png')
 
         st.warning(
-            f"* We notice the average and variability images did not show "
-            f"patterns where we could intuitively differentiate one from"
-            f" another. "
-            f"However, a small difference in the colour pigment of the average"
-            f" images is seen for both labels.")
+            f'* We notice the average and variability images did not show '
+            f'patterns where we could intuitively differentiate one from'
+            f' another. '
+            f'However, a small difference in the colour pigment of the average'
+            f' images is seen for both labels.')
 
         st.image(avg_powdery_mildew,
                  caption='Powdery mildew leaf - Average and Variability')
         st.image(avg_healthy, caption='Healthy leaf - Average and Variability')
-        st.write("---")
+        st.write('---')
 
     if st.checkbox(
-            f"Differences between average powdery mildew and average"
-            f" healthy leaves"):
-        diff_between_avgs = plt.imread(f"outputs/{version}/avg_diff.png")
+            f'Differences between average powdery mildew and average'
+            f' healthy leaves'):
+        diff_between_avgs = plt.imread(f'outputs/{version}/avg_diff.png')
 
         st.warning(
-            f"* We notice this study didn't show "
-            f"patterns where we could intuitively differentiate one from"
-            f" another.")
+            f'* We notice this study did not show '
+            f'patterns where we could intuitively differentiate one from '
+            f' another.')
         st.image(diff_between_avgs,
                  caption='Difference between average images')
 
-    if st.checkbox("Image Montage"):
+    if st.checkbox('Image Montage'):
         st.write(
             f"* To refresh the montage, click on the 'Create Montage'"
-            f" button")
+            f' button')
         my_data_dir = 'inputs/mildew_dataset/cherry-leaves'
         labels = os.listdir(my_data_dir + '/validation')
         label_to_display = st.selectbox(
-            label="Select label", options=labels, index=0)
-        if st.button("Create Montage"):
+            label='Select label', options=labels, index=0)
+        if st.button('Create Montage'):
             image_montage(dir_path=my_data_dir + '/validation',
                           label_to_display=label_to_display,
                           nrows=8, ncols=3, figsize=(10, 25))
-        st.write("---")
+        st.write('---')
 
 
 def image_montage(dir_path, label_to_display, nrows, ncols, figsize=(15, 10)):
-    sns.set_style("white")
+    sns.set_style('white')
     labels = os.listdir(dir_path)
 
     # subset the class you are interested to display
@@ -77,9 +77,9 @@ def image_montage(dir_path, label_to_display, nrows, ncols, figsize=(15, 10)):
             img_idx = random.sample(images_list, nrows * ncols)
         else:
             print(
-                f"Decrease nrows or ncols to create your montage. \n"
-                f"There are {len(images_list)} in your subset. "
-                f"You requested a montage with {nrows * ncols} spaces")
+                f'Decrease nrows or ncols to create your montage. \n'
+                f'There are {len(images_list)} in your subset. '
+                f'You requested a montage with {nrows * ncols} spaces')
             return
 
         # create list of axes indices based on nrows and ncols
@@ -94,7 +94,7 @@ def image_montage(dir_path, label_to_display, nrows, ncols, figsize=(15, 10)):
             img_shape = img.shape
             axes[plot_idx[x][0], plot_idx[x][1]].imshow(img)
             axes[plot_idx[x][0], plot_idx[x][1]].set_title(
-                f"Width {img_shape[1]}px x Height {img_shape[0]}px")
+                f'Width {img_shape[1]}px x Height {img_shape[0]}px')
             axes[plot_idx[x][0], plot_idx[x][1]].set_xticks([])
             axes[plot_idx[x][0], plot_idx[x][1]].set_yticks([])
         plt.tight_layout()
@@ -103,5 +103,5 @@ def image_montage(dir_path, label_to_display, nrows, ncols, figsize=(15, 10)):
         # plt.show()
 
     else:
-        print("The label you selected doesn't exist.")
-        print(f"The existing options are: {labels}")
+        print('The label you selected does not exist.')
+        print(f'The existing options are: {labels}')
