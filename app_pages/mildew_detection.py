@@ -28,7 +28,7 @@ def mildew_detection_body():
 
     images_buffer = st.file_uploader(
         'Leaf samples. You may select more than one.',
-        type='png', accept_multiple_files=True)
+        type='jpg', accept_multiple_files=True)
 
     if images_buffer is not None:
         df_report = pd.DataFrame([])
