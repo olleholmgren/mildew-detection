@@ -5,15 +5,15 @@ def hypothesis_body():
     st.write('### Project hypothesis')
 
     st.success(
-        f"* We have reason to believe that leaves affected by powdery mildew"
-        f"exhibit distinct, visible markings, "
-        f"typically, powdery mildew-infected leaves display white dots"
-        f"scattered across the surface, distinguishing them from healthy"
-        f"leaves. \n\n"
-        f"* An image montage illustrates that a leaf affected by mildew"
-        f"typically displays white marks scattered across its surface. "
-        f"The studies involving average images, variability images, and"
-        f"the differences between averages did not reveal any distinct "
-        f"patterns to differentiate them, except for a slight whitening"
-        f"observed in the images."
+        f'* We have reason to believe that leaves affected by powdery mildew '
+        f'exhibit distinct, visible markings. '
+        f'Typically, powdery mildew-infected leaves display white dots '
+        f'scattered across the surface, distinguishing them from healthy '
+        f'leaves. \n\n'
+        f'* An image montage illustrates that a leaf affected by mildew '
+        f'typically displays white marks scattered across its surface. '
+        f'The studies involving average images, variability images, and '
+        f'the differences between averages did not reveal any distinct '
+        f'patterns to differentiate them, except for a slight whitening '
+        f'observed in the images.'
     )
