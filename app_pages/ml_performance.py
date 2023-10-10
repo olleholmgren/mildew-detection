@@ -12,7 +12,7 @@ def ml_performance_metrics_body():
     st.write('### Train, validation and test set: Labels frequencies')
 
     labels_distribution = plt.imread(
-        f'output/{version}/labels_distribution.png')
+        f'outputs/{version}/labels_distribution.png')
     st.image(labels_distribution,
              caption='Labels distribution on train, validation and test sets')
     st.write('---')
@@ -20,10 +20,10 @@ def ml_performance_metrics_body():
     st.write('### Model history')
     col1, col2 = st.beta_columns(2)
     with col1:
-        model_acc = plt.imread(f'output/{version}/model_training_acc.png')
+        model_acc = plt.imread(f'outputs/{version}/model_training_acc.png')
         st.image(model_acc, caption='Model training accuracy')
     with col2:
-        model_loss = plt.imread(f'output/{version}/model_training_losses.png')
+        model_loss = plt.imread(f'outputs/{version}/model_training_losses.png')
         st.image(model_loss, caption='Model training losses')
     st.write('---')
 
