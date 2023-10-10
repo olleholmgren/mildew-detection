@@ -42,9 +42,9 @@ def mildew_detection_body():
                 f'px width x {img_array.shape[0]}px height')
 
             version = 'v3'
-            resized_img = resize_input_image(img=img_pil, version=version)
+            img_resized = resize_input_image(img=img_pil, version=version)
             pred_proba, pred_class = load_model_and_predict(
-                resized_img, version=version)
+                img_resized, version=version)
             plot_predictions_probabilities(pred_proba, pred_class)
 
             df_report = df_report.append(
