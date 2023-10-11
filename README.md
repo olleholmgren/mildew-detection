@@ -21,21 +21,32 @@ To save time in this process, the IT team suggested an ML system that detects in
 - The distinction between a healty leaf and a powdery mildew leaf will be carried out by the trained machine learning model with an accuracy of 97%.
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
+### User Stories
+#### Data visualisation
 
-- List your business requirements and a rationale to map them to the Data Visualisations and ML tasks.
+* As a client, I want to be able to showcase the **mean** and **standard deviation** values of healthy cherry leaf images and those affected by powdery mildew. This presentation will enable me to visually distinguish between the two types of leaves.
+
+* As a client, I want to illustrate the distinctions between a typical healthy cherry leaf and one infected by powdery mildew. This demonstration will provide a clear visual differentiation between the two conditions.
+
+* As a client, I would like to create a visual montage featuring both healthy cherry leaves and cherry leaves infected by powdery mildew. This montage will help me distinguish between the two types of cherry leaves.
+
+#### Image classification
+
+* As a client, I want to be able to make a prediction whether a given leaf is healthy or infected.
+
+* As a client, I want to have a machine learning model app to do this prediction for me.
 
 ## ML Business Case
 
-- In the previous bullet, you potentially visualised an ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
+
 
 ## Dashboard Design
 
-- List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items, that your dashboard library supports.
-- Finally, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project, you were confident you would use a given plot to display an insight, but later, you chose another plot type).
+
 
 ## Unfixed Bugs
 
-- You will need to mention unfixed bugs and why they were unfixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable for consideration, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
+
 
 ## Deployment
 
