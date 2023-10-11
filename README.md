@@ -38,6 +38,15 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 ## ML Business Case
 
+* We aim to build a supervised machine learning model for binary classification using the provided image dataset. This model will predict whether a leaf is infected by powdery mildew or not.
+
+* Our aim is to have a minimum of 97% accuracy of the model.
+
+* The objective of this model is to create a swift and dependable diagnostic application that can identify powdery patches on leaves, thus confirming the health status of cherry plants.
+
+* The client is in need, and will benefit of our product because presently, the disease is detected manually, requiring approximately 30 minutes of inspections for each tree. This method is highly time-consuming and lacks scalability.
+
+* The model works as a flag to signify whether a leaf exhibits features indicating tree infection. Plantation staff capture leaf images and upload them to the app, enabling fast, real-time predictions.
 
 
 ## Dashboard Design
