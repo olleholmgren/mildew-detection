@@ -18,8 +18,7 @@ def mildew_detection_body():
 
     st.write(
         f'* You can download a set of mildew containing leaves and healthy '
-        f'leaves for live prediction. '
-        f'You can download the images '
+        f'leaves for live prediction from Kaggle '
         f'[here](kaggle.com/datasets/codeinstitute/cherry-leaves/code).'
     )
 
