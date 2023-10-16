@@ -131,14 +131,49 @@ The project pages are presented as following:
 
 ## Main Data Analysis and Machine Learning Libraries
 
-* Here you should list the libraries used in the project and provide an example(s) of how you used these libraries.
+## Technologies Used
+
+### Languages
+
+Python
+
+### Frameworks and other technologies
+
+1. **Git**: Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+
+2. **GitHub:** GitHub is used to store the projects code after being pushed from Git.
+
+3. **Heroku**: It is a container-based cloud platform used for deployment.
+
+### Data Analysis and Machine Learning Libraries
+
+Following are the list of libraries used in the project
+
+1. **Numpy**: It is an open-source, python library used for working with arrays. NumPy offers comprehensive mathematical functions, random number generators, linear algebra routines.
+
+2. **Pandas**: It is an open-source, python package used for working with data sets. It has functions for analyzing, cleaning, exploring, and manipulating data.
+
+3. **Matplotlib**: It is a cross-platform, data visualization and graphical plotting library for python.
+
+4. **Seaborn**: It is Python data visualization library based on Matplotlib. It will be used to visualize random distributions.
+
+5. **Plotly**: It is an interactive, open-soource, and browser-based gra6.	Tensorflow: It is an open-sourec machine learning platform focused on deep neural networks.phing library. Used to create visualisations within Jupyter notebooks to present the data.
+
+6. **Tensorflow**: It is an open-source machine learning platform focused on deep neural networks.
+
+7. **Shutil**: Used form file copying and removal.
+
+8. **Streamlit**: It is used to create web apps for data science and machine learning.
+
+9. **Joblib**: It is a set of tools  to provide lightweighting pipelining in Python.
+
+10. **PIL**: Python Imaging Library is a free and open-source additional library for the Python programming language that adds support for opening, manipulating, and saving many different image file formats.
+
 
 ## Credits
+
+
 
 ### Content
 
 ### Media
-
-## Acknowledgements (optional)
-
-* Thank the people that provided support throughout this project.
