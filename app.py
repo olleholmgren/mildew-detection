@@ -10,10 +10,10 @@ from app_pages.ml_performance import ml_performance_metrics_body
 
 app = MultiPage(app_name='Cherry leaf mildew detection')
 
-app.app_page('Hypothesis', hypothesis_body)
 app.app_page('Summary', summary_body)
 app.app_page('Visualizer', visualizer_body)
 app.app_page('Mildew Detection', mildew_detection_body)
+app.app_page('Hypothesis', hypothesis_body)
 app.app_page('Machine Learning Performance', ml_performance_metrics_body)
 
 app.run()
