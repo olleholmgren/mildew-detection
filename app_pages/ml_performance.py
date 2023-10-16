@@ -17,7 +17,6 @@ def ml_performance_metrics_body():
              caption='Labels distribution on train, validation and test sets')
 
     st.info(
-
         f'* Train - healthy: 1472 images\n'
         f'* Train - powdery_mildew: 1472 images\n'
         f'* Validation - healthy: 210 images\n'
@@ -28,6 +27,12 @@ def ml_performance_metrics_body():
     st.write('---')
 
     st.write('### Model history')
+
+    st.info(
+        f'The graphs depict the ML model learning cycle, illustrating '
+        f'accuracy and loss during training. It is clear the model follows a '
+        f'typical learning curve, indicating no overfitting or underfitting.')
+
     col1, col2 = st.beta_columns(2)
     with col1:
         model_acc = plt.imread(f'outputs/{version}/model_training_acc.png')
