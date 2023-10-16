@@ -1,9 +1,11 @@
 # Cherry Leaf Mildew Detection
+
 * An app for fast and accurate detection of mildew infection made with a machine learning model
+
 ## Dataset Content
 
-- The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves). We then created a fictitious user story where predictive analytics can be applied in a real project in the workplace.
-- The dataset contains +4 thousand images taken from the client's crop fields. The images show healthy cherry leaves and cherry leaves that have powdery mildew, a fungal disease that affects many plant species. The cherry plantation crop is one of the finest products in their portfolio, and the company is concerned about supplying the market with a compromised quality product.
+* The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves). We then created a fictitious user story where predictive analytics can be applied in a real project in the workplace.
+* The dataset contains +4 thousand images taken from the client's crop fields. The images show healthy cherry leaves and cherry leaves that have powdery mildew, a fungal disease that affects many plant species. The cherry plantation crop is one of the finest products in their portfolio, and the company is concerned about supplying the market with a compromised quality product.
 
 ## Business Requirements
 
@@ -11,17 +13,19 @@ The cherry plantation crop from Farmy & Foods is facing a challenge where their 
 
 To save time in this process, the IT team suggested an ML system that detects instantly, using a leaf tree image, if it is healthy or has powdery mildew. A similar manual process is in place for other crops for detecting pests, and if this initiative is successful, there is a realistic chance to replicate this project for all other crops. The dataset is a collection of cherry leaf images provided by Farmy & Foods, taken from their crops.
 
-- 1 - The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one with powdery mildew.
-- 2 - The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
+* 1 - The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one with powdery mildew.
+* 2 - The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
 
 ## Hypothesis and how to validate?
 
-- The mildew disease is expected to be identified by distinctive white powdery spots on the leaf surface.
-- To validate this, cherry leaves with powdery mildew will be compared to healthy cherry leaves.
-- The distinction between a healty leaf and a powdery mildew leaf will be carried out by the trained machine learning model with an accuracy of 97%.
+* The mildew disease is expected to be identified by distinctive white powdery spots on the leaf surface.
+* To validate this, cherry leaves with powdery mildew will be compared to healthy cherry leaves.
+* The distinction between a healty leaf and a powdery mildew leaf will be carried out by the trained machine learning model with an accuracy of 97%.
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
+
 ### User Stories
+
 #### Data visualisation
 
 * As a client, I want to be able to showcase the **mean** and **standard deviation** values of healthy cherry leaf images and those affected by powdery mildew. This presentation will enable me to visually distinguish between the two types of leaves.
@@ -48,10 +52,9 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 * The model works as a flag to signify whether a leaf exhibits features indicating tree infection. Plantation staff capture leaf images and upload them to the app, enabling fast, real-time predictions.
 
-
 ## Dashboard Design
 
-To present the project with its hypothesis, summary, visuliser, detector and machine learning model performance, I created a dashboard app using Streamlit
+To present the project with its hypothesis, summary, visuliser, detector and machine learning model performance, I created a dashboard app using Streamlit.
 A very simple and easy-to-use interface containing a side bar with checkboxes to navigate to all pages within the application.
 
 The project pages are presented as following:
@@ -61,30 +64,29 @@ The project pages are presented as following:
 * Summary
   * Powdery mildew, caused by Podosphaera clandestina, affects cherry trees, leading to white powdery spots on leaves and stems, especially on lower leaves. It thrives in high humidity and moderate temperatures, causing significant damage to plants and reducing harvests.
 
-  * Business requirements:
-    * The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one with powdery mildew.
+* Business requirements:
+  * The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one with powdery mildew.
 
-    * The client is interested in predicting if a cherry leaf is   healthy or contains powdery mildew.
+  * The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
 
 #### Page 2: Leaf Visualizer
 
-* Business requirement 1
+* Business requirement 1:
 
-  * The client is interested in being able to visually differentiate a leaf with powdery mildew from a healthy leaf.
+  * The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one with powdery mildew.
 
 * Three checkboxes with the options:
   * Difference between average and variability image
   * Differences between average powdery mildew and average healthy leaves
   * Image Montage
-    * 
-	* Checkbox 2 - Difference between average healthy and infected leaves
-	* Checkbox 3 - Image Montage
 
 #### Page 3: Mildew Detection
 
-* Business requirement 2
+* Business requirement 2:
 
   * The client is interested in conducting a study to visually differentiate if a given leaf is containing mildew or not.
+
+  * Text paragraph and a link to Kaggle where the dataset is downloaded from
   
   * A file uploader widget designed for uploading images of leaves. Once the user uploads an image, the interface will promptly display the uploaded image along with a statement predicting the health status of the leaf, specifying whether it is healthy or not.
 
@@ -97,7 +99,6 @@ The project pages are presented as following:
 * The distinction between a healty leaf and a powdery mildew leaf will be carried out by a trained machine learning model with an accuracy of 97%.
 
 #### Page 5: ML Performance Metrics
-
 
 •	Train - healthy: 1472 images
 
@@ -117,9 +118,9 @@ The project pages are presented as following:
 
 ### Heroku
 
-- The App live link is: https://YOUR_APP_NAME.herokuapp.com/
-- Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
-- The project was deployed to Heroku using the following steps.
+* The App live link is: <https://YOUR_APP_NAME.herokuapp.com/>
+* Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
+* The project was deployed to Heroku using the following steps.
 
 1. Log in to Heroku and create an App
 2. At the Deploy tab, select GitHub as the deployment method.
@@ -130,24 +131,14 @@ The project pages are presented as following:
 
 ## Main Data Analysis and Machine Learning Libraries
 
-- Here you should list the libraries used in the project and provide an example(s) of how you used these libraries.
+* Here you should list the libraries used in the project and provide an example(s) of how you used these libraries.
 
 ## Credits
 
-- In this section, you need to reference where you got your content, media and from where you got extra help. It is common practice to use code from other repositories and tutorials. However, it is necessary to be very specific about these sources to avoid plagiarism.
-- You can break the credits section up into Content and Media, depending on what you have included in your project.
-
 ### Content
-
-- The text for the Home page was taken from Wikipedia Article A.
-- Instructions on how to implement form validation on the Sign-Up page were taken from [Specific YouTube Tutorial](https://www.youtube.com/).
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/).
 
 ### Media
 
-- The photos used on the home and sign-up page are from This Open-Source site.
-- The images used for the gallery page were taken from this other open-source site.
-
 ## Acknowledgements (optional)
 
-- Thank the people that provided support throughout this project.
+* Thank the people that provided support throughout this project.
