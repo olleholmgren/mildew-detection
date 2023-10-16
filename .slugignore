@@ -1,0 +1,6 @@
+*.zip
+workspaces/mildew-detection/inputs/mildew_dataset/cherry-leaves/train/*
+/documentation
+workspaces/mildew-detection/inputs/mildew_dataset/cherry-leaves/test/*
+workspaces/mildew-detection/inputs/mildew_dataset/cherry-leaves/healthy
+workspaces/mildew-detection/inputs/mildew_dataset/cherry-leaves/powdery_mildew
