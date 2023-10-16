@@ -14,7 +14,7 @@ def hypothesis_body():
         f'compared to healthy cherry leaves. \n\n'
         f'* The distinction between a healty leaf and a powdery mildew '
         f'leaf will be carried out by a trained machine learning model '
-        f'with an accuracy of 97%. \n\n')
+        f'with an agreed accuracy of 97% or higher. \n\n')
 
     st.info(
         f'* An image montage in this project illustrates that a leaf '

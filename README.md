@@ -51,11 +51,67 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 ## Dashboard Design
 
+To present the project with its hypothesis, summary, visuliser, detector and machine learning model performance, I created a dashboard app using Streamlit
+A very simple and easy-to-use interface containing a side bar with checkboxes to navigate to all pages within the application.
 
+The project pages are presented as following:
+
+#### Page 1: Quick Project Summary
+
+* Summary
+  * Powdery mildew, caused by Podosphaera clandestina, affects cherry trees, leading to white powdery spots on leaves and stems, especially on lower leaves. It thrives in high humidity and moderate temperatures, causing significant damage to plants and reducing harvests.
+
+  * Business requirements:
+    * The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one with powdery mildew.
+
+    * The client is interested in predicting if a cherry leaf is   healthy or contains powdery mildew.
+
+#### Page 2: Leaf Visualizer
+
+* Business requirement 1
+
+  * The client is interested in being able to visually differentiate a leaf with powdery mildew from a healthy leaf.
+
+* Three checkboxes with the options:
+  * Difference between average and variability image
+  * Differences between average powdery mildew and average healthy leaves
+  * Image Montage
+    * 
+	* Checkbox 2 - Difference between average healthy and infected leaves
+	* Checkbox 3 - Image Montage
+
+#### Page 3: Mildew Detection
+
+* Business requirement 2
+
+  * The client is interested in conducting a study to visually differentiate if a given leaf is containing mildew or not.
+  
+  * A file uploader widget designed for uploading images of leaves. Once the user uploads an image, the interface will promptly display the uploaded image along with a statement predicting the health status of the leaf, specifying whether it is healthy or not.
+
+#### Page 4: Project Hypothesis and Validation
+
+* We have reason to believe that leaves infected by powdery mildew exhibit distinct, visible markings. Typically, powdery mildew-infected leaves display white dots scattered across the surface, distinguishing them from healthy leaves.
+
+* To validate this, cherry leaves with powdery mildew will be compared to healthy cherry leaves.
+
+* The distinction between a healty leaf and a powdery mildew leaf will be carried out by a trained machine learning model with an accuracy of 97%.
+
+#### Page 5: ML Performance Metrics
+
+
+•	Train - healthy: 1472 images
+
+•	Train - powdery_mildew: 1472 images
+
+•	Validation - healthy: 210 images
+
+•	Validation - powdery_mildew: 210 images
+
+•	Test - healthy: 422 images
+
+•	Test - powdery_mildew: 422 images
 
 ## Unfixed Bugs
-
-
 
 ## Deployment
 
