@@ -14,7 +14,9 @@ def visualizer_body():
     st.write('## Leaf visualizer')
     st.info(
         f'* The client is interested in conducting a study to visually '
-        f'differentiate a healthy cherry leaf from one with powdery mildew.'
+        f'differentiate a healthy cherry leaf from one with powdery mildew.\n'
+        f'* Below are three functions to get visual differences between '
+        f'a healthy leaf and an infected one.'
     )
 
     version = 'v3'

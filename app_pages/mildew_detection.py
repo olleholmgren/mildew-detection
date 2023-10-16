@@ -13,7 +13,9 @@ from src.machine_learning.predictive_analysis import (
 def mildew_detection_body():
     st.info(
         f'* The client is interested in conducting a study to visually '
-        f'differentiate if a given leaf is containing mildew or not.'
+        f'differentiate if a given leaf is containing mildew or not.\n'
+        f'* Here below, you can upload an image to validate if your leaf '
+        f'is infected or healthy.'
     )
 
     st.write(

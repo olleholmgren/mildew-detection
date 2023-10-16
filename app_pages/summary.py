@@ -13,7 +13,7 @@ def summary_body():
         f'harvests.')
 
     st.success(
-        f'This project has 2 business requirements:\n'
+        f'This project has 2 business requirements covered and fulfilled:\n'
         f'* The client is interested in conducting a study to visually '
         f'differentiate a healthy cherry leaf '
         f'from one with powdery mildew.\n\n'

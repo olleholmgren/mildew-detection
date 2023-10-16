@@ -15,7 +15,12 @@ def ml_performance_metrics_body():
         f'outputs/{version}/labels_distribution.png')
     st.image(labels_distribution,
              caption='Labels distribution on train, validation and test sets')
-
+    st.write(
+        f'The dataset for this project is from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves).\n'
+        f'It contains images of 2104 healthy leaves and 2104 infected leaves. '
+        f'The dataset has been split into three datasets for training, '
+        f'validation and test.'
+    )
     st.info(
         f'* Train - healthy: 1472 images\n'
         f'* Train - powdery_mildew: 1472 images\n'
@@ -28,7 +33,7 @@ def ml_performance_metrics_body():
 
     st.write('### Model history')
 
-    st.info(
+    st.write(
         f'The graphs depict the ML model learning cycle, illustrating '
         f'accuracy and loss during training. It is clear the model follows a '
         f'typical learning curve, indicating no overfitting or underfitting.')
