@@ -15,6 +15,16 @@ def ml_performance_metrics_body():
         f'outputs/{version}/labels_distribution.png')
     st.image(labels_distribution,
              caption='Labels distribution on train, validation and test sets')
+
+    st.info(
+
+        f'* Train - healthy: 1472 images\n'
+        f'* Train - powdery_mildew: 1472 images\n'
+        f'* Validation - healthy: 210 images\n'
+        f'* Validation - powdery_mildew: 210 images\n'
+        f'* Test - healthy: 422 images\n'
+        f'* Test - powdery_mildew: 422 images\n')
+
     st.write('---')
 
     st.write('### Model history')

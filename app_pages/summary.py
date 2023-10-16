@@ -2,7 +2,15 @@ import streamlit as st
 
 
 def summary_body():
-    st.write('### Summary')
+    st.write('## Summary')
+
+    st.info(
+        f'Powdery mildew, caused by Podosphaera clandestina, affects '
+        f'cherry trees, leading to white powdery spots on leaves and stems, '
+        f'especially on lower leaves.\n '
+        f'It thrives in high humidity and moderate '
+        f'temperatures, causing significant damage to plants and reducing '
+        f'harvests.')
 
     st.success(
         f'This project has 2 business requirements:\n'
