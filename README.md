@@ -66,7 +66,7 @@ The project pages are presented as following:
 * Summary
   * Powdery mildew, caused by Podosphaera clandestina, affects cherry trees, leading to white powdery spots on leaves and stems, especially on lower leaves. It thrives in high humidity and moderate temperatures, causing significant damage to plants and reducing harvests.
 
-* Business requirements:
+* This project has 2 business requirements covered and fulfilled:
   * The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one with powdery mildew.
 
   * The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
@@ -76,21 +76,27 @@ The project pages are presented as following:
 * Business requirement 1:
 
   * The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one with powdery mildew.
+  * Below are three functions to get visual differences between a healthy leaf and an infected one. 
 
-* Three checkboxes with the options:
-  * Difference between average and variability image
-  * Differences between average powdery mildew and average healthy leaves
+* Three functions as checkboxes with the options:
+  * Difference between average and variability image.
+    * Shows info text together with average and variability images.
+  * Differences between average powdery mildew and average healthy leaves.
+    * Shows info text together with average powdery and healthy leaf images.
   * Image Montage
+    * A drop-down menu containing the two labels - healthy and powdery.
+    * A button to create an image montage with one of the labels.
 
 #### Page 3: Mildew Detection
 
 * Business requirement 2:
 
   * The client is interested in conducting a study to visually differentiate if a given leaf is containing mildew or not.
+  * Here below, you can upload an image to validate if your leaf is infected or healthy.
 
   * Text paragraph and a link to Kaggle where the dataset is downloaded from
   
-  * A file uploader widget designed for uploading images of leaves. Once the user uploads an image, the interface will promptly display the uploaded image along with a statement predicting the health status of the leaf, specifying whether it is healthy or not.
+  * A file uploader widget designed for uploading images of leaves. Once the user uploads an image, the interface will promptly display the uploaded image along with a statement predicting the health status of the leaf, specifying whether it is healthy or not, following probability prediction and an analysis report available for downloading via a link that says 'Download Report'.
 
 #### Page 4: Project Hypothesis and Validation
 
@@ -101,6 +107,13 @@ The project pages are presented as following:
 * The distinction between a healty leaf and a powdery mildew leaf will be carried out by a trained machine learning model with an accuracy of 97%.
 
 #### Page 5: ML Performance Metrics
+
+* A bar plot is shown, visualizing the two labels distribution in three different sets:
+  * Train
+  * Validation
+  * Test
+
+The dataset for this project is from Kaggle. It contains images of 2104 healthy leaves and 2104 infected leaves. The dataset has been split into three datasets for training, validation and test.
 
 •	Train - healthy: 1472 images
 
@@ -113,6 +126,13 @@ The project pages are presented as following:
 •	Test - healthy: 422 images
 
 •	Test - powdery_mildew: 422 images
+
+* Model history
+Graphs about the Model training accuracy and losses
+
+* Generalised performance on test set
+  * Accuracy: 1.0000
+  * Loss: 0.0003
 
 ## Bugs
 
