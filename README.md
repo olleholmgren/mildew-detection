@@ -2,6 +2,8 @@
 
 * An app for fast and accurate detection of mildew infection made with a machine learning model
 
+[Visit the live project page here](https://mil-det-617b4e188563.herokuapp.com/)
+
 ## Dataset Content
 
 * The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves). We then created a fictitious user story where predictive analytics can be applied in a real project in the workplace.
@@ -112,14 +114,19 @@ The project pages are presented as following:
 
 •	Test - powdery_mildew: 422 images
 
-## Unfixed Bugs
+## Bugs
+
+* I had to change the PIL image attribute from ANTIALIAS to LANCZOS in resize_input_image function in predictive_analysis.py file because ANTIALIAS was removed in the latest version of Pillow.
+
+* I had to change the stack from -22 to -20 before deploying to Heroku in order to support the correct Python version
 
 ## Deployment
 
 ### Heroku
 
-* The App live link is: <https://YOUR_APP_NAME.herokuapp.com/>
+* The App live link is: <https://mil-det-617b4e188563.herokuapp.com/>
 * Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
+
 * The project was deployed to Heroku using the following steps.
 
 1. Log in to Heroku and create an App
@@ -171,9 +178,27 @@ Following are the list of libraries used in the project
 
 
 ## Credits
+* [The Malaria Detector walkthrough project from Code Institute](https://learn.codeinstitute.net/courses/course-v1:code_institute+CI_DA_ML+2021_Q4/courseware/07a3964f7a72407ea3e073542a2955bd/29ae4b4c67ed45a8a97bb9f4dcfa714b/) : The greater part of my project is based on this walkthrough project from Code Institute. All the way from Jupyter Notebooks to the app pages in the Streamlit dashboard.
 
+* Remainders of the inspiration regarding text content and ReadMe structure are taken from these two repositories from my fellow school mates:
+* [Mildew Detection by Albin Hall](https://github.com/AlbinHall/mildew-detection)
+* [Mildew Detection by ssreelakshmi8] (https://github.com/ssreelakshmi88/mildew-detection-cherry-leaves_milestonePP5)
 
 
 ### Content
 
-### Media
+* Streamlit lessons by Code Institute
+
+* Streamlit documentation
+
+* Code Institute Lecture and Videos
+
+
+### Acknowledgements
+
+Acknowledgements goes out to my mentor for this project, Precious Ijege.
+He guided me well through all steps and pushed me in the right direction whenever
+I had the slightest confusion.
+
+Thanks to the Code Institute Slack channel Predictive Analytics which I used for
+troubleshooting and thanks to Niel who was the fastest out there with support.
