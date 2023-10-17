@@ -127,10 +127,10 @@ The dataset for this project is from Kaggle. It contains images of 2104 healthy 
 
 •	Test - powdery_mildew: 422 images
 
-* Model history
+### Model history
 Graphs about the Model training accuracy and losses
 
-* Generalised performance on test set
+Generalised performance on test set
   * Accuracy: 1.0000
   * Loss: 0.0003
 
@@ -198,11 +198,13 @@ Following are the list of libraries used in the project
 
 
 ## Credits
-* [The Malaria Detector walkthrough project from Code Institute](https://learn.codeinstitute.net/courses/course-v1:code_institute+CI_DA_ML+2021_Q4/courseware/07a3964f7a72407ea3e073542a2955bd/29ae4b4c67ed45a8a97bb9f4dcfa714b/) : The greater part of my project is based on this walkthrough project from Code Institute. All the way from Jupyter Notebooks to the app pages in the Streamlit dashboard.
 
-* Remainders of the inspiration regarding text content and ReadMe structure are taken from these two repositories from my fellow school mates:
+The greater part of my project is based on this walkthrough project from Code Institute. All the way from Jupyter Notebooks to the app pages in the Streamlit dashboard.
+* [The Malaria Detector walkthrough project from Code Institute](https://learn.codeinstitute.net/courses/course-v1:code_institute+CI_DA_ML+2021_Q4/courseware/07a3964f7a72407ea3e073542a2955bd/29ae4b4c67ed45a8a97bb9f4dcfa714b/)
+
+Remainders of the inspiration regarding text content and ReadMe structure are taken from these two repositories from my fellow school mates:
 * [Mildew Detection by Albin Hall](https://github.com/AlbinHall/mildew-detection)
-* [Mildew Detection by ssreelakshmi8] (https://github.com/ssreelakshmi88/mildew-detection-cherry-leaves_milestonePP5)
+* [Mildew Detection by ssreelakshmi8](https://github.com/ssreelakshmi88/mildew-detection-cherry-leaves_milestonePP5)
 
 
 ### Content
